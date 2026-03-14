@@ -1,0 +1,18 @@
+{
+  "characterId": "sato",
+  "name": "サトー",
+  "model": "gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-03-08T05:55:51.338Z",
+  "output": "project/assets/characters/sato.png",
+  "rawOutput": "project/assets/characters/sato.raw.png",
+  "referenceImage": null,
+  "fixedSize": {
+    "width": 1080,
+    "height": 1920
+  },
+  "prompt": "Create a photorealistic cinematic full-body character portrait for a modern web novel. Preserve silhouette clarity, costume readability, realistic anatomy, realistic fabric texture, and a consistent live-action visual language shared with all other generated assets.\nFull-body portrait of Sato, a 45-year-old Japanese man with a wild but grounded presence. Slightly tall with a lean athletic build, not bulky, long black hair tied back in a ponytail, mustache and beard around the mouth and chin, thoughtful eyes, mature rugged face. He loves American casual fashion: denim, work shirt, leather boots, vintage military or trucker jacket, old wristwatch, canvas tote bag. He should feel masculine, lived-in, calm, and naturally cool rather than glamorous.\nKeep the whole character visible within frame when possible, especially head, key costume details, hands, silhouette, and signature accessories.\nFinal delivery will be center-cropped to 1080x1920. Keep the face, silhouette, and signature costume details near the center with safe margins.\nNegative prompt: anime, manga, cel shading, cartoon, text, logo, watermark, deformed anatomy, extra limbs, duplicate body parts, cropped head, doll-like face, young idol look, clean-shaven face, short hair, exaggerated bodybuilder muscles, flashy luxury fashion, fantasy weapons, anime pretty-boy look",
+  "sourceRefs": [
+    "project/02_characters.md"
+  ],
+  "responseTexts": []
+}

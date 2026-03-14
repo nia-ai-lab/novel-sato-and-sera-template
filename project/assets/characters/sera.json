@@ -1,0 +1,18 @@
+{
+  "characterId": "sera",
+  "name": "セラ",
+  "model": "gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-03-08T06:01:32.907Z",
+  "output": "project/assets/characters/sera.png",
+  "rawOutput": "project/assets/characters/sera.raw.png",
+  "referenceImage": null,
+  "fixedSize": {
+    "width": 1080,
+    "height": 1920
+  },
+  "prompt": "Create a photorealistic cinematic full-body character portrait for a modern web novel. Preserve silhouette clarity, costume readability, realistic anatomy, realistic fabric texture, and a consistent live-action visual language shared with all other generated assets.\nFull-body portrait of Sera, an elite covert bodyguard disguised as a cat-eared maid. Small and agile build, silver-gray hair, sharp golden eyes, and a disciplined expression. Her outfit should remain faithful to a classic black-and-white maid dress: proper apron, modest frills, long skirt, fitted bodice, sleeves, and traditional maid headwear with cat ears integrated naturally. Do not redesign it into combat armor. Instead, hint at hidden lethality by letting one or two concealed weapons subtly peek out from the apron lining, sleeve, garter, or skirt fold. She must feel elegant, dangerous, disciplined, and quietly affectionate.\nKeep the whole character visible within frame when possible, especially head, key costume details, hands, silhouette, and signature accessories.\nFinal delivery will be center-cropped to 1080x1920. Keep the face, silhouette, and signature costume details near the center with safe margins.\nNegative prompt: anime, manga, cel shading, cartoon, text, logo, watermark, deformed anatomy, extra limbs, duplicate body parts, cropped head, doll-like face, oversexualized maid, tactical armor, combat bodysuit, sci-fi combat suit, comedy chibi style, soft helpless expression, anime heroine look, doll face, exaggerated frills, giant visible weapons",
+  "sourceRefs": [
+    "project/02_characters.md"
+  ],
+  "responseTexts": []
+}
