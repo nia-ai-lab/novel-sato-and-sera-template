@@ -1,0 +1,24 @@
+{
+  "spec": {
+    "globalPrompt": "Create a photorealistic cinematic full-body character portrait for a modern web novel. Preserve silhouette clarity, costume readability, realistic anatomy, realistic fabric texture, and a consistent live-action visual language shared with all other generated assets.",
+    "globalNegativePrompt": "anime, manga, cel shading, cartoon, text, logo, watermark, deformed anatomy, extra limbs, duplicate body parts, cropped head, doll-like face",
+    "fixedWidth": 1080,
+    "fixedHeight": 1920,
+    "outputDir": "project/assets/characters",
+    "defaultModel": "gemini-3.1-flash-image-preview"
+  },
+  "characters": [
+    {
+      "id": "sato-episode",
+      "name": "サトー",
+      "model": "gemini-3.1-flash-image-preview",
+      "prompt": "Full-body portrait of Sato for the installment 'おっさんサトーの気ままな休日'. Preserve the exact face, age, body impression, ponytail, mustache, and chin beard from the supplied canonical portrait. Show him in refined early-summer Sunday casual clothing suitable for a full day of quiet leisure from morning balcony coffee to riverside walking and evening terrace dining: off-white inner shirt, charcoal linen overshirt, dark slim slacks, comfortable leather sneakers, understated wristwatch, folded tote bag, calm and satisfied expression. Keep him grounded, modest, elegant, and believable rather than fashionable in a flashy way.",
+      "negativePrompt": "young idol look, clean-shaven face, short hair, exaggerated bodybuilder muscles, fantasy armor, flashy race costume, denim, office suit, anime pretty-boy look",
+      "referenceImage": "project/assets/characters/sato.png",
+      "sourceRefs": [
+        "project/02_characters.md",
+        "soudoku-novel-builder/references/ossan-sato-series-canon.md"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "talk-003-stage",
+  "name": "第2章第1話の昼テラス背景",
+  "talkKey": "chapter-02-talk-01",
+  "chapterLabel": "第2章",
+  "talkLabel": "第1話",
+  "model": "gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-03-15T02:37:09.298Z",
+  "output": "project/assets/world/talk-003-stage.webp",
+  "rawOutput": "project/assets/world/talk-003-stage.raw.png",
+  "prompt": "Create a photorealistic cinematic environment image for a modern web novel. Emphasize atmosphere, lighting, believable architecture, realistic materials, and a unified live-action visual language shared with all other generated assets. Cinematic noon environment at White Heron Riverfront Commons. Show a tasteful riverside terrace with white tabletops, glass and wood architecture, broad daylight, shimmering reflected light from water, and an airy but not crowded Sunday lunch mood. The place should feel modern, polished, and pleasantly open. Final delivery will be cropped to 1920x1080. Keep the main focal area centered with safe margins and leave enough side information for widescreen composition. Negative prompt: anime, manga, cel shading, cartoon, text, logo, watermark, character close-up, deformed architecture, low detail, combat, action pose, readable text, collage, split panel, heavy crowd, obvious threat, luxury resort excess, empty dead mall feeling",
+  "sourceRefs": [
+    "project/01_plot.md",
+    "project/03_worldbuilding.md",
+    "project/04_chapter_outline.md"
+  ],
+  "responseTexts": []
+}

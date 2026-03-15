@@ -7,8 +7,8 @@
   "spec": {
     "globalPrompt": "overall art direction",
     "globalNegativePrompt": "things to avoid",
-    "fixedWidth": 1440,
-    "fixedHeight": 2304
+    "fixedWidth": 1920,
+    "fixedHeight": 1080
   },
   "titleImage": {
     "id": "title-cover",
@@ -58,18 +58,26 @@
   "spec": {
     "globalPrompt": "overall background concept direction",
     "globalNegativePrompt": "things to avoid",
-    "fixedWidth": 1440,
-    "fixedHeight": 2304,
+    "fixedWidth": 1920,
+    "fixedHeight": 1080,
     "outputDir": "project/assets/world",
     "defaultModel": "gemini-3.1-flash-image-preview"
   },
   "backgrounds": [
     {
-      "id": "holiday-morning-street",
-      "name": "休日の朝の街並み",
+      "id": "talk-001-stage",
+      "talkKey": "chapter-01-talk-01",
+      "chapterLabel": "第1章",
+      "talkLabel": "第1話",
+      "name": "第1章第1話の前庭背景",
       "model": "gemini-3.1-flash-image-preview",
-      "prompt": "quiet affluent neighborhood at morning with hidden unease",
-      "negativePrompt": "avoid crowds and overt violence"
+      "prompt": "public-facing establishing environment that Sato first sees in this talk",
+      "negativePrompt": "avoid battle aftermath and readable signage",
+      "sourceRefs": [
+        "project/01_plot.md",
+        "project/03_worldbuilding.md",
+        "project/04_chapter_outline.md"
+      ]
     }
   ]
 }
@@ -82,10 +90,11 @@
   "spec": {
     "globalPrompt": "overall scene art direction",
     "globalNegativePrompt": "things to avoid",
-    "fixedWidth": 1080,
-    "fixedHeight": 1920,
+    "fixedWidth": 1920,
+    "fixedHeight": 1080,
     "outputDir": "project/assets/episodes",
-    "defaultModel": "gemini-3.1-flash-image-preview"
+    "defaultModel": "gemini-3.1-flash-image-preview",
+    "promptSuffix": "keep main subjects near the center with safe margins"
   },
   "characters": [
     {
@@ -112,10 +121,13 @@
 ## Usage Notes
 
 - 初期フェーズでは `character-portraits.json` と `background-concepts.json` を先に整える
+- キャラクター画像は従来どおり縦長の参照素材で、Web UI へ直接出す前提ではない
+- 背景画像は各話につき 1 枚を基本とし、その話のサトーパートが最初に見る前庭側の舞台を基準にする
 - 生成物の保存先は `project/assets/`。`docs/` は `build-web-novel.mjs` が配信用に組み立てる
 - キャラクター画像生成後は `referenceImage` を生成結果に合わせて更新する
 - タイトル画像は最終工程で生成する。`referenceImages` に最新のキャラクター画像を入れ、最終的な人物像と印象を揃える
-- 節画像は `docs/story-data.js` を元に `build-episode-image-manifest.mjs` が組み立てる
+- 節画像は `docs/story-data.js` と `prompts/background-concepts.json` を元に `build-episode-image-manifest.mjs` が組み立てる
+- 節画像では背景画像ファイル自体は渡さず、その話の背景 prompt をサトーパート / セラパートの両方へ共有して流用する
 - `scene-id` は `scene-章(000)-話(000)-節(000)` 形式で、override キーや画像ファイル名もこれに揃える
 - 節画像 prompt では小説の章話節ラベルを画像に描かせない。`text`, `captions`, `chapter labels`, `talk labels`, `subtitles`, `UI overlays` などを負例に入れる
 - 節画像生成は通常、追加または修正した `scene-id` だけを `generate-episode-image.mjs` に渡す。既存画像がある節は自動でスキップされる

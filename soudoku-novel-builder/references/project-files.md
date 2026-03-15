@@ -16,7 +16,7 @@
 ## Asset and Build Files
 
 - `prompts/title-image.json`: 最終工程で使うタイトル画像生成定義
-- `prompts/background-concepts.json`: 初期フェーズで使う背景イメージ生成定義
+- `prompts/background-concepts.json`: 各話につき 1 枚の背景イメージと、その話で共有する背景 prompt の定義
 - `prompts/character-portraits.json`: キャラクター画像生成定義
 - `prompts/scene-character-references.json`: 節画像用の参照キャラクター定義と上書き
 - `prompts/episode-image-manifest.json`: `build-episode-image-manifest.mjs` が生成する節画像入力
@@ -28,10 +28,10 @@
 1. ヒアリングした要求を `00_project_overview.md` に反映
 2. 物語の変更を `01_plot.md`, `02_characters.md`, `03_worldbuilding.md`, `04_chapter_outline.md` に反映
 3. 本文や画像の案が設計とズレる場合は、先に差分をユーザへ指摘し、設計ファイルを修正する
-4. 初回承認用に主要キャラクター画像と背景イメージの定義を `prompts/*.json` に反映し、生成物を `project/assets/` に保存
+4. 初回承認用に主要キャラクター画像と各話背景イメージの定義を `prompts/*.json` に反映し、生成物を `project/assets/` に保存
 5. 初回承認を取る
 6. 承認後に本文を `project/manuscript/` に反映
-7. 章ができるごとに `build-episode-image-manifest.mjs` を更新し、新規追加または修正した `節` の画像だけを `project/assets/episodes/` に生成する
+7. 章ができるごとに `build-episode-image-manifest.mjs` を更新し、各話背景 prompt を取り込んだうえで、新規追加または修正した `節` の画像だけを `project/assets/episodes/` に生成する
 8. 全体が固まった最後に `prompts/title-image.json` を更新し、現在のキャラクター画像に寄せてタイトル画像を生成する
 9. その時点の `project/assets/` の画像と本文から `docs/` をビルドして確認
 

@@ -1,0 +1,20 @@
+{
+  "episodeId": "scene-003-001-002-sera",
+  "title": "第2節　呼ばれなかった車",
+  "chapterTitle": "第3章　灯りの底",
+  "model": "gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-03-15T03:32:33.261Z",
+  "output": "project/assets/episodes/scene-003-001-002-sera.webp",
+  "rawOutput": "project/assets/episodes/scene-003-001-002-sera.raw.png",
+  "referenceImages": [
+    "project/assets/characters/sato-episode.png",
+    "project/assets/characters/sera.png"
+  ],
+  "referenceCharacterIds": [
+    "sato-episode",
+    "sera"
+  ],
+  "continuityNotes": [],
+  "prompt": "Create one cinematic 16:9 scene illustration for a serial web novel. Do not render any readable text, chapter numbers, talk labels, section labels, captions, subtitles, logos, or UI overlays inside the image. Story context: 第3章　灯りの底 / 第1話　夕景と小さな予約. Shared talk background: 第3章第1話の夕景食事処背景. Background reference prompt: Cinematic dusk riverside dining spot near White Heron River. Show a modest but elegant exterior terrace, amber bridge lights beginning to appear, reflections on the water, early evening sky, and the feeling of a quiet reservation kept by a careful regular. The tone should be intimate, warm, and gently rewarding after a full holiday. Preserve the same place, architecture, time of day, weather, lighting, and atmosphere unless the scene text explicitly changes them. Use the same talk-level setting as the shared stage, but show it from a hidden security-side, reverse angle, blind spot, rear approach, service path, or protected backside when appropriate. Scene focus: 第2節　呼ばれなかった車 / セラパート. Summary: 予約名義を使うなら、店の前がいちばん自然に見える。 偽の配車班は、その単純さを選んでいた。店の予約表に一度だけ目を通し、名前を拾い、会計の瞬間に車へ誘導する。春の夕景と店灯りに… Key beats: 予約名義を使うなら、店の前がいちばん自然に見える。 偽の配車班は、その単純さを選んでいた。店の予約表に一度だけ目を通し、名前を拾い、会計の瞬間に車へ誘導する。春の夕景と店灯りに気を取られた客なら、確認のひと手間を省くと踏んだのだろう。セラは入口脇の植え込みと壁の角、その短い死角だけを先に押さえた。 運転役は通りの先、呼び込み役は店先、補助役は歩道の影。形が見えれば、崩す順も決まる。セラは会計の客列が一歩動くタイミングで呼び込み役の端末を落とし、振り向いた肩をそのまま壁側へ流した。声は店内の食器音より外へ出ない。 運転役には、店側の合図が来ないまま待機だけが続く。補助役が動いたところで、セラは車止めの影から膝を払った。転倒音すら灯りの多い通りでは目立たない。必要なのは、サトーの名前が今夜どの扉にも正しく届かないことだけだった。 Use the supplied character reference images to preserve these canonical looks: sato-episode: サトー. Keep him consistent with the episode-specific portrait generated from the canonical Sato image. sera: セラ. Keep her consistent with the canonical Sera portrait, including the visible cat-ear support-security unit, without adding installment-specific redesign. The support unit is completed by the cat-ear headband alone, so do not add backpack rigs, back-mounted devices, extra mechanical arms, exoskeleton parts, visible cable bundles, or any other extra machinery. Do not give her knives, daggers, swords, blades, or any other bladed weapon. Compose for a 1920x1080 delivery, keep main subjects near the center, and preserve enough left/right safe margin so the image still reads well in portrait scrolling mode. Use the installment-specific Sato portrait for Sato. Use Sera's canonical portrait directly without redesigning her for this installment. Sera never carries knives or other bladed weapons; if she uses a tool, keep it small, discreet, and non-bladed. For Sato-side images, Sato is dominant and any Sera presence must stay clearly separate and unreadable as a casual companion. For Sera-side images, Sera is dominant, the attacker must not resemble Sato, and Sato must remain an unaware background figure looking elsewhere. Preserve the feeling of a refined but ordinary Sunday, and compose for a 1920x1080 delivery with the main subjects near the center and safe margins on both sides so the image also works in portrait scrolling layouts.",
+  "responseTexts": []
+}

@@ -36,7 +36,7 @@ async function encodeCandidate(inputPath, width, scale, quality) {
 
 async function convertEpisodeImage(inputPath, outputPath) {
   const metadata = await sharp(inputPath).metadata();
-  const width = metadata.width ?? 1080;
+  const width = metadata.width ?? 1920;
 
   let bestMatch = null;
   let smallest = null;

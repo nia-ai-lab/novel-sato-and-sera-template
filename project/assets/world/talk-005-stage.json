@@ -1,0 +1,18 @@
+{
+  "id": "talk-005-stage",
+  "name": "第3章第1話の夕景食事処背景",
+  "talkKey": "chapter-03-talk-01",
+  "chapterLabel": "第3章",
+  "talkLabel": "第1話",
+  "model": "gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-03-15T02:37:43.249Z",
+  "output": "project/assets/world/talk-005-stage.webp",
+  "rawOutput": "project/assets/world/talk-005-stage.raw.png",
+  "prompt": "Create a photorealistic cinematic environment image for a modern web novel. Emphasize atmosphere, lighting, believable architecture, realistic materials, and a unified live-action visual language shared with all other generated assets. Cinematic dusk riverside dining spot near White Heron River. Show a modest but elegant exterior terrace, amber bridge lights beginning to appear, reflections on the water, early evening sky, and the feeling of a quiet reservation kept by a careful regular. The tone should be intimate, warm, and gently rewarding after a full holiday. Final delivery will be cropped to 1920x1080. Keep the main focal area centered with safe margins and leave enough side information for widescreen composition. Negative prompt: anime, manga, cel shading, cartoon, text, logo, watermark, character close-up, deformed architecture, low detail, combat, action pose, readable text, collage, split panel, heavy crowd, obvious threat, loud nightlife district, neon overload",
+  "sourceRefs": [
+    "project/01_plot.md",
+    "project/03_worldbuilding.md",
+    "project/04_chapter_outline.md"
+  ],
+  "responseTexts": []
+}

@@ -1,0 +1,18 @@
+{
+  "id": "talk-001-stage",
+  "name": "第1章第1話の朝ベランダ背景",
+  "talkKey": "chapter-01-talk-01",
+  "chapterLabel": "第1章",
+  "talkLabel": "第1話",
+  "model": "gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-03-15T02:36:39.188Z",
+  "output": "project/assets/world/talk-001-stage.webp",
+  "rawOutput": "project/assets/world/talk-001-stage.raw.png",
+  "prompt": "Create a photorealistic cinematic environment image for a modern web novel. Emphasize atmosphere, lighting, believable architecture, realistic materials, and a unified live-action visual language shared with all other generated assets. Cinematic early-summer Sunday morning environment seen from Sato's apartment living room toward the balcony. Show a calm mid-rise Tokyo apartment interior connected to a tidy balcony with pour-over coffee tools, a small plate, potted herbs, soft bedding light, and rooftops beyond with a faint suggestion of the White Heron River district. Emphasize quiet order, fresh air, warm pale gold sunlight, and the elegant beginning of a holiday. Final delivery will be cropped to 1920x1080. Keep the main focal area centered with safe margins and leave enough side information for widescreen composition. Negative prompt: anime, manga, cel shading, cartoon, text, logo, watermark, character close-up, deformed architecture, low detail, combat, action pose, readable text, collage, split panel, heavy crowd, obvious threat, messy room, luxury penthouse excess",
+  "sourceRefs": [
+    "project/01_plot.md",
+    "project/03_worldbuilding.md",
+    "project/04_chapter_outline.md"
+  ],
+  "responseTexts": []
+}

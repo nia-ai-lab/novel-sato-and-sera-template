@@ -1,0 +1,18 @@
+{
+  "episodeId": "scene-001-002-001-sato",
+  "title": "第1節　橋の手前の紙袋",
+  "chapterTitle": "第1章　朝の湯気",
+  "model": "gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-03-15T02:48:49.818Z",
+  "output": "project/assets/episodes/scene-001-002-001-sato.webp",
+  "rawOutput": "project/assets/episodes/scene-001-002-001-sato.raw.png",
+  "referenceImages": [
+    "project/assets/characters/sato-episode.png"
+  ],
+  "referenceCharacterIds": [
+    "sato-episode"
+  ],
+  "continuityNotes": [],
+  "prompt": "Create one cinematic 16:9 scene illustration for a serial web novel. Do not render any readable text, chapter numbers, talk labels, section labels, captions, subtitles, logos, or UI overlays inside the image. Story context: 第1章　朝の湯気 / 第2話　川沿いのパンの匂い. Shared talk background: 第1章第2話の川沿いパン屋背景. Background reference prompt: Cinematic early-summer Sunday morning riverside street leading from a small bakery toward the White Heron River promenade. Show clean bridge railings, open sky, a quiet walkway, paper bread bags, warm fresh light, and only sparse weekend foot traffic. The place should feel breathable, slightly refined, and naturally inviting for a slow holiday walk. Preserve the same place, architecture, time of day, weather, lighting, and atmosphere unless the scene text explicitly changes them. Use the same talk-level setting as the public-facing stage that Sato naturally notices first. Scene focus: 第1節　橋の手前の紙袋 / サトーパート. Summary: 着替えて外へ出ると、街はもう朝の輪郭をはっきりさせていた。白鷺川へ向かう道には、洗ったばかりのような光が落ちている。サトーは折りたたみトートを肩にかけ、遠回り気味に川沿いのパン… Key beats: 着替えて外へ出ると、街はもう朝の輪郭をはっきりさせていた。白鷺川へ向かう道には、洗ったばかりのような光が落ちている。サトーは折りたたみトートを肩にかけ、遠回り気味に川沿いのパン屋へ向かった。急がない散歩には、少しだけ回り道が要る。 店先に近づく前から、焼きたての匂いが風に混じってくる。バターの甘さと粉のあたたかさが混ざった朝の匂いは、それだけで人を機嫌よくする。サトーはクロワッサンと小さな田舎パンを選び、紙袋の口を軽く折ってもらうあいだ、今日は当たりだなと思った。 川へ抜ける橋の手前に、手押し台車が一台だけ止まっていた。朝市帰りには見えないのに、荷を積む向きだけが妙に出来すぎている。けれど撮影の搬入か、出店の準備か、その程度のことだろうとサトーは考え直した。休日に見かける不自然さは、たいてい商売の事情で説明がつく。 欄干の手前で紙袋を持ち直すと、まだ熱の残る底が掌にやわらかい。川面は白く光り、風は軽く、歩幅まで整えてくれるようだった。こういう朝に本を一冊持ってきて、どこかで少しだけ読むのも悪くない。 Use the supplied character reference images to preserve these canonical looks: sato-episode: サトー. Keep him consistent with the episode-specific portrait generated from the canonical Sato image. Compose for a 1920x1080 delivery, keep main subjects near the center, and preserve enough left/right safe margin so the image still reads well in portrait scrolling mode. Use the installment-specific Sato portrait for Sato. Use Sera's canonical portrait directly without redesigning her for this installment. For Sato-side images, Sato is dominant and any Sera presence must stay clearly separate and unreadable as a casual companion. For Sera-side images, Sera is dominant, the attacker must not resemble Sato, and Sato must remain an unaware background figure looking elsewhere. Preserve the feeling of a refined but ordinary Sunday, and compose for a 1920x1080 delivery with the main subjects near the center and safe margins on both sides so the image also works in portrait scrolling layouts.",
+  "responseTexts": []
+}

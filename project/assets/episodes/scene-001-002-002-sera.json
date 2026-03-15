@@ -1,0 +1,20 @@
+{
+  "episodeId": "scene-001-002-002-sera",
+  "title": "第2節　手押し車の死角",
+  "chapterTitle": "第1章　朝の湯気",
+  "model": "gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-03-15T02:49:20.630Z",
+  "output": "project/assets/episodes/scene-001-002-002-sera.webp",
+  "rawOutput": "project/assets/episodes/scene-001-002-002-sera.raw.png",
+  "referenceImages": [
+    "project/assets/characters/sato-episode.png",
+    "project/assets/characters/sera.png"
+  ],
+  "referenceCharacterIds": [
+    "sato-episode",
+    "sera"
+  ],
+  "continuityNotes": [],
+  "prompt": "Create one cinematic 16:9 scene illustration for a serial web novel. Do not render any readable text, chapter numbers, talk labels, section labels, captions, subtitles, logos, or UI overlays inside the image. Story context: 第1章　朝の湯気 / 第2話　川沿いのパンの匂い. Shared talk background: 第1章第2話の川沿いパン屋背景. Background reference prompt: Cinematic early-summer Sunday morning riverside street leading from a small bakery toward the White Heron River promenade. Show clean bridge railings, open sky, a quiet walkway, paper bread bags, warm fresh light, and only sparse weekend foot traffic. The place should feel breathable, slightly refined, and naturally inviting for a slow holiday walk. Preserve the same place, architecture, time of day, weather, lighting, and atmosphere unless the scene text explicitly changes them. Use the same talk-level setting as the shared stage, but show it from a hidden security-side, reverse angle, blind spot, rear approach, service path, or protected backside when appropriate. Scene focus: 第2節　手押し車の死角 / セラパート. Summary: 台車の荷台は浅すぎた。見せかけの木箱の下に、引き込み用のベルトと緩衝布が隠れている。橋の脇に停まった配送車も、側面の社名だけが新しすぎる。雑に整えた偽装ほど、朝の光では輪郭が浮… Key beats: 台車の荷台は浅すぎた。見せかけの木箱の下に、引き込み用のベルトと緩衝布が隠れている。橋の脇に停まった配送車も、側面の社名だけが新しすぎる。雑に整えた偽装ほど、朝の光では輪郭が浮く。 セラはパン屋の裏手から先回りし、橋脚脇の細い通路に身を置いていた。狙いは、サトーが紙袋を持ち直す一瞬だ。前方から台車を寄せ、後方の車両へ流し込む。人通りの少ない朝だからこそ成立する短い導線だった。 先頭の男が台車の取っ手を押し込む直前、セラは前輪のロックに薄い金具を差し込んだ。台車は予定していた角度を失い、欄干脇の車止めへ鈍く噛む。その半拍の乱れだけで十分だった。男の肘を返し、二人目の足首を払う。三人目が車両の扉を開ける前に、通信だけを落とす。 騒ぎにする必要はない。配送車の陰へ崩した二人を固定し、運転席の鍵を抜き取る。残る一人には、配達遅延の苛立ちしか残らない程度の錯覚を植えつければ足りた。サトーの耳に届くのは、せいぜい台車が縁石に当たる硬い音ひとつでいい。 Use the supplied character reference images to preserve these canonical looks: sato-episode: サトー. Keep him consistent with the episode-specific portrait generated from the canonical Sato image. sera: セラ. Keep her consistent with the canonical Sera portrait, including the visible cat-ear support-security unit, without adding installment-specific redesign. Compose for a 1920x1080 delivery, keep main subjects near the center, and preserve enough left/right safe margin so the image still reads well in portrait scrolling mode. Use the installment-specific Sato portrait for Sato. Use Sera's canonical portrait directly without redesigning her for this installment. For Sato-side images, Sato is dominant and any Sera presence must stay clearly separate and unreadable as a casual companion. For Sera-side images, Sera is dominant, the attacker must not resemble Sato, and Sato must remain an unaware background figure looking elsewhere. Preserve the feeling of a refined but ordinary Sunday, and compose for a 1920x1080 delivery with the main subjects near the center and safe margins on both sides so the image also works in portrait scrolling layouts.",
+  "responseTexts": []
+}

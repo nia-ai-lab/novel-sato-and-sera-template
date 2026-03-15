@@ -1,0 +1,18 @@
+{
+  "id": "talk-002-stage",
+  "name": "第1章第2話の川沿いパン屋背景",
+  "talkKey": "chapter-01-talk-02",
+  "chapterLabel": "第1章",
+  "talkLabel": "第2話",
+  "model": "gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-03-15T02:36:35.065Z",
+  "output": "project/assets/world/talk-002-stage.webp",
+  "rawOutput": "project/assets/world/talk-002-stage.raw.png",
+  "prompt": "Create a photorealistic cinematic environment image for a modern web novel. Emphasize atmosphere, lighting, believable architecture, realistic materials, and a unified live-action visual language shared with all other generated assets. Cinematic early-summer Sunday morning riverside street leading from a small bakery toward the White Heron River promenade. Show clean bridge railings, open sky, a quiet walkway, paper bread bags, warm fresh light, and only sparse weekend foot traffic. The place should feel breathable, slightly refined, and naturally inviting for a slow holiday walk. Final delivery will be cropped to 1920x1080. Keep the main focal area centered with safe margins and leave enough side information for widescreen composition. Negative prompt: anime, manga, cel shading, cartoon, text, logo, watermark, character close-up, deformed architecture, low detail, combat, action pose, readable text, collage, split panel, heavy crowd, obvious threat, festival chaos, tourist overload",
+  "sourceRefs": [
+    "project/01_plot.md",
+    "project/03_worldbuilding.md",
+    "project/04_chapter_outline.md"
+  ],
+  "responseTexts": []
+}

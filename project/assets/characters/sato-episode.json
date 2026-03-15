@@ -1,0 +1,19 @@
+{
+  "characterId": "sato-episode",
+  "name": "サトー",
+  "model": "gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-03-15T02:35:41.380Z",
+  "output": "project/assets/characters/sato-episode.png",
+  "rawOutput": "project/assets/characters/sato-episode.raw.png",
+  "referenceImage": "project/assets/characters/sato.png",
+  "fixedSize": {
+    "width": 1080,
+    "height": 1920
+  },
+  "prompt": "Create a photorealistic cinematic full-body character portrait for a modern web novel. Preserve silhouette clarity, costume readability, realistic anatomy, realistic fabric texture, and a consistent live-action visual language shared with all other generated assets.\nFull-body portrait of Sato for the installment 'おっさんサトーの気ままな休日'. Preserve the exact face, age, body impression, ponytail, mustache, and chin beard from the supplied canonical portrait. Show him in refined early-summer Sunday casual clothing suitable for a full day of quiet leisure from morning balcony coffee to riverside walking and evening terrace dining: off-white inner shirt, charcoal linen overshirt, dark slim slacks, comfortable leather sneakers, understated wristwatch, folded tote bag, calm and satisfied expression. Keep him grounded, modest, elegant, and believable rather than fashionable in a flashy way.\nKeep the whole character visible within frame when possible, especially head, key costume details, hands, silhouette, and signature accessories.\nFinal delivery will be center-cropped to 1080x1920. Keep the face, silhouette, and signature costume details near the center with safe margins.\nNegative prompt: anime, manga, cel shading, cartoon, text, logo, watermark, deformed anatomy, extra limbs, duplicate body parts, cropped head, doll-like face, young idol look, clean-shaven face, short hair, exaggerated bodybuilder muscles, fantasy armor, flashy race costume, denim, office suit, anime pretty-boy look",
+  "sourceRefs": [
+    "project/02_characters.md",
+    "soudoku-novel-builder/references/ossan-sato-series-canon.md"
+  ],
+  "responseTexts": []
+}

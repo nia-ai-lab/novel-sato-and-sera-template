@@ -87,7 +87,9 @@ async function main() {
     nextSteps.push("主要キャラクターを定義し、`prompts/character-portraits.json` を更新する");
   }
   if (backgroundPrompt.backgrounds.length === 0) {
-    nextSteps.push("初回承認用の背景イメージを `prompts/background-concepts.json` に定義する");
+    nextSteps.push("各話用の背景イメージを `prompts/background-concepts.json` に定義する");
+  } else if (talkDefinitions > 0 && backgroundPrompt.backgrounds.length < talkDefinitions) {
+    nextSteps.push("各話に対応する背景プロンプトが足りないため `prompts/background-concepts.json` を補う");
   }
   if (sceneDefinitions === 0) {
     nextSteps.push("`project/manuscript/full_novel.md` に章・話・節を追加する");
@@ -132,7 +134,7 @@ async function main() {
     `${sectionStatus(
       "background prompts",
       backgroundPrompt.backgrounds.length > 0,
-      `${backgroundPrompt.backgrounds.length} prompts / ${backgroundImages} images`,
+      `${backgroundPrompt.backgrounds.length}${talkDefinitions > 0 ? ` / ${talkDefinitions}` : ""} prompts / ${backgroundImages} images`,
     )}\n`,
   );
   process.stdout.write(

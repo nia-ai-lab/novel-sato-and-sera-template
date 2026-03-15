@@ -1,0 +1,18 @@
+{
+  "episodeId": "scene-001-001-001-sato",
+  "title": "第1節　湯気の向こうの点検札",
+  "chapterTitle": "第1章　朝の湯気",
+  "model": "gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-03-15T02:48:22.338Z",
+  "output": "project/assets/episodes/scene-001-001-001-sato.webp",
+  "rawOutput": "project/assets/episodes/scene-001-001-001-sato.raw.png",
+  "referenceImages": [
+    "project/assets/characters/sato-episode.png"
+  ],
+  "referenceCharacterIds": [
+    "sato-episode"
+  ],
+  "continuityNotes": [],
+  "prompt": "Create one cinematic 16:9 scene illustration for a serial web novel. Do not render any readable text, chapter numbers, talk labels, section labels, captions, subtitles, logos, or UI overlays inside the image. Story context: 第1章　朝の湯気 / 第1話　珈琲と点検札. Shared talk background: 第1章第1話の朝ベランダ背景. Background reference prompt: Cinematic early-summer Sunday morning environment seen from Sato's apartment living room toward the balcony. Show a calm mid-rise Tokyo apartment interior connected to a tidy balcony with pour-over coffee tools, a small plate, potted herbs, soft bedding light, and rooftops beyond with a faint suggestion of the White Heron River district. Emphasize quiet order, fresh air, warm pale gold sunlight, and the elegant beginning of a holiday. Preserve the same place, architecture, time of day, weather, lighting, and atmosphere unless the scene text explicitly changes them. Use the same talk-level setting as the public-facing stage that Sato naturally notices first. Scene focus: 第1節　湯気の向こうの点検札 / サトーパート. Summary: 日曜の朝は、目覚ましが鳴らないだけで少しだけ上等に見える。サトーは薄いカーテン越しの光で目を覚まし、枕元の時計を見てから、これなら充分だなとひとりでうなずいた。急ぐ理由のない時… Key beats: 日曜の朝は、目覚ましが鳴らないだけで少しだけ上等に見える。サトーは薄いカーテン越しの光で目を覚まし、枕元の時計を見てから、これなら充分だなとひとりでうなずいた。急ぐ理由のない時間に、自分の意思だけで起きられた朝は、それだけで気分がいい。 顔を洗ってから玄関の新聞受けを開けると、共用廊下のメーターボックスに黄色い点検札がぶら下がっているのが見えた。日曜のこんな時間から設備点検か、と少しだけ眉を上げる。けれど管理会社にもいろいろ都合があるのだろうと思えば、それ以上ひっかかるほどのことでもなかった。 湯を沸かし、豆を挽き、白いドリッパーに静かに円を描く。ふくらんだ粉から立つ香りは、それだけで部屋の空気を整えてくれる。サトーは最初の一杯ほど丁寧に淹れたい派で、休日の朝だけはその儀式を少しだけ長く楽しむことにしていた。 マグを持ってベランダへ出ると、初夏の空気がまだ薄く冷えていて心地よい。遠くの屋根の向こうに白鷺川の明るさがのぞき、街全体がまだ声をひそめている。こういう時間があるから、一人暮らしも案外悪くないのだとサトーは思う。 Use the supplied character reference images to preserve these canonical looks: sato-episode: サトー. Keep him consistent with the episode-specific portrait generated from the canonical Sato image. Compose for a 1920x1080 delivery, keep main subjects near the center, and preserve enough left/right safe margin so the image still reads well in portrait scrolling mode. Use the installment-specific Sato portrait for Sato. Use Sera's canonical portrait directly without redesigning her for this installment. For Sato-side images, Sato is dominant and any Sera presence must stay clearly separate and unreadable as a casual companion. For Sera-side images, Sera is dominant, the attacker must not resemble Sato, and Sato must remain an unaware background figure looking elsewhere. Preserve the feeling of a refined but ordinary Sunday, and compose for a 1920x1080 delivery with the main subjects near the center and safe margins on both sides so the image also works in portrait scrolling layouts.",
+  "responseTexts": []
+}

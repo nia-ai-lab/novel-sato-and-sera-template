@@ -488,7 +488,9 @@ function buildStyleGuideTemplate(options) {
 - 地の文: 各話は必ず第1節のサトーパートから始め、第2節のセラパートで同一事件の裏側を返す
 - サトーパート: 朝の空気、生活感、今回の気ままな題材の楽しさを丁寧に積む
 - サトーパート: 必ず「ちょっとした違和感」を1つ以上入れる。サトーはそれを事件と思わず、日常的な理由へ丸めて流す
+- サトーパート: サトー本人の直接セリフを最低2つ入れる。1つは異変を楽観的に流すセリフ、もう1つはその場の日常の良さを言葉にするセリフで、できる限り役割を分ける
 - セラパート: 直前の違和感の正体を短く鋭く回収する
+- セラパート: 敵制圧に刃物を使わない。必要な道具は非刃物に限り、身体操作や環境利用を優先する
 - 会話文: 量は多すぎず、空気を支えるために使う。サトーは穏やか、セラは短く辛辣
 - テンポ: 日常描写はゆるやかに、護衛処理は短く確実に切る
 
@@ -506,7 +508,7 @@ function buildStyleGuideTemplate(options) {
 
 ## Continuity Rules
 - 固定設定: サトーは最後までセラの正体に気づかない
-- 固定設定: セラの対処は非致死に限る
+- 固定設定: セラの対処は非致死かつ非刃物に限る
 - 固定設定: 1話の2節は同一事件の表裏であり、別事件を混ぜない
 - 固定設定: canonical portraits の顔立ちと装備解釈を崩さない
 - 後から変えてよい設定: 季節、舞台、題材、服装差分、各話の事件、脇役の顔ぶれ
@@ -710,8 +712,8 @@ function buildTitlePromptTemplate(options) {
         "Create a photorealistic cinematic illustration for a modern web novel. Keep lighting, materials, anatomy, and faces grounded in live-action realism. Maintain a unified realistic visual language across all generated assets.",
       globalNegativePrompt:
         "anime, manga, cel shading, cartoon, illustration with flat shading, text, logo, watermark, collage, split panel, deformed anatomy, low detail face, extra limbs",
-      fixedWidth: 1440,
-      fixedHeight: 2304,
+      fixedWidth: 1920,
+      fixedHeight: 1080,
     },
     titleImage: {
       id: "title-cover",
@@ -719,9 +721,10 @@ function buildTitlePromptTemplate(options) {
       outputDir: "project/assets/title",
       referenceImages: [],
       prompt: isSatoSeries(options)
-        ? `${options.title} の世界観と読後感が一目で伝わるタイトルビジュアルを生成する。canonical portraits を元に作った今回専用のサトー画像とセラ画像、背景イメージ、本文トーンが固まった最後に更新する。`
-        : `${options.title} の世界観と読後感が一目で伝わるタイトルビジュアルを生成する。これは最終工程で使う。キャラクター画像と世界観が固まった後で更新する。`,
-      negativePrompt: "avoid generic fantasy poster layout",
+        ? `${options.title} の世界観と読後感が一目で伝わるタイトルビジュアルを生成する。canonical portraits を元に作った今回専用のサトー画像とセラ画像、背景イメージ、本文トーンが固まった最後に更新する。画像の中には作品タイトル、サブタイトル、ロゴ、章話節ラベル、UI 文字、クレジットなどの後乗せ文字を入れず、作品のキービジュアルとして成立させる。背景の一部として自然に存在する店名看板や街中表示は許容する。`
+        : `${options.title} の世界観と読後感が一目で伝わるタイトルビジュアルを生成する。これは最終工程で使う。キャラクター画像と世界観が固まった後で更新する。画像の中には作品タイトル、サブタイトル、ロゴ、章話節ラベル、UI 文字、クレジットなどの後乗せ文字を入れず、作品のキービジュアルとして成立させる。背景の一部として自然に存在する店名看板や街中表示は許容する。`,
+      negativePrompt:
+        "avoid generic fantasy poster layout, embedded cover title, embedded subtitle, poster logo, floating typography, chapter label overlay, UI overlay, floating credits",
     },
   };
 }
@@ -787,19 +790,126 @@ function buildCharacterPromptTemplate(options) {
   };
 }
 
-function buildBackgroundConceptTemplate() {
+function buildTalkBackgroundEntries() {
+  return [
+    {
+      id: "talk-001-stage",
+      talkKey: "chapter-01-talk-01",
+      chapterLabel: "第1章",
+      talkLabel: "第1話",
+      name: "第1章第1話の前庭背景",
+      model: "gemini-3.1-flash-image-preview",
+      prompt:
+        "Public-facing establishing environment for chapter 1 talk 1. Base this on the place Sato first sees in his part of the talk. Emphasize architecture, approach path, weather, lighting, time of day, quiet daily atmosphere, and the visible front side of the setting.",
+      negativePrompt:
+        "combat, action pose, readable text, collage, split panel, heavy crowd, obvious threat",
+      sourceRefs: [
+        "project/01_plot.md",
+        "project/03_worldbuilding.md",
+        "project/04_chapter_outline.md",
+      ],
+    },
+    {
+      id: "talk-002-stage",
+      talkKey: "chapter-01-talk-02",
+      chapterLabel: "第1章",
+      talkLabel: "第2話",
+      name: "第1章第2話の前庭背景",
+      model: "gemini-3.1-flash-image-preview",
+      prompt:
+        "Public-facing establishing environment for chapter 1 talk 2. Base this on the place Sato first sees in his part of the talk. Emphasize architecture, approach path, weather, lighting, time of day, quiet daily atmosphere, and the visible front side of the setting.",
+      negativePrompt:
+        "combat, action pose, readable text, collage, split panel, heavy crowd, obvious threat",
+      sourceRefs: [
+        "project/01_plot.md",
+        "project/03_worldbuilding.md",
+        "project/04_chapter_outline.md",
+      ],
+    },
+    {
+      id: "talk-003-stage",
+      talkKey: "chapter-02-talk-01",
+      chapterLabel: "第2章",
+      talkLabel: "第1話",
+      name: "第2章第1話の前庭背景",
+      model: "gemini-3.1-flash-image-preview",
+      prompt:
+        "Public-facing establishing environment for chapter 2 talk 1. Base this on the place Sato first sees in his part of the talk. Emphasize architecture, approach path, weather, lighting, time of day, quiet daily atmosphere, and the visible front side of the setting.",
+      negativePrompt:
+        "combat, action pose, readable text, collage, split panel, heavy crowd, obvious threat",
+      sourceRefs: [
+        "project/01_plot.md",
+        "project/03_worldbuilding.md",
+        "project/04_chapter_outline.md",
+      ],
+    },
+    {
+      id: "talk-004-stage",
+      talkKey: "chapter-02-talk-02",
+      chapterLabel: "第2章",
+      talkLabel: "第2話",
+      name: "第2章第2話の前庭背景",
+      model: "gemini-3.1-flash-image-preview",
+      prompt:
+        "Public-facing establishing environment for chapter 2 talk 2. Base this on the place Sato first sees in his part of the talk. Emphasize architecture, approach path, weather, lighting, time of day, quiet daily atmosphere, and the visible front side of the setting.",
+      negativePrompt:
+        "combat, action pose, readable text, collage, split panel, heavy crowd, obvious threat",
+      sourceRefs: [
+        "project/01_plot.md",
+        "project/03_worldbuilding.md",
+        "project/04_chapter_outline.md",
+      ],
+    },
+    {
+      id: "talk-005-stage",
+      talkKey: "chapter-03-talk-01",
+      chapterLabel: "第3章",
+      talkLabel: "第1話",
+      name: "第3章第1話の前庭背景",
+      model: "gemini-3.1-flash-image-preview",
+      prompt:
+        "Public-facing establishing environment for chapter 3 talk 1. Base this on the place Sato first sees in his part of the talk. Emphasize architecture, approach path, weather, lighting, time of day, quiet daily atmosphere, and the visible front side of the setting.",
+      negativePrompt:
+        "combat, action pose, readable text, collage, split panel, heavy crowd, obvious threat",
+      sourceRefs: [
+        "project/01_plot.md",
+        "project/03_worldbuilding.md",
+        "project/04_chapter_outline.md",
+      ],
+    },
+    {
+      id: "talk-006-stage",
+      talkKey: "chapter-03-talk-02",
+      chapterLabel: "第3章",
+      talkLabel: "第2話",
+      name: "第3章第2話の前庭背景",
+      model: "gemini-3.1-flash-image-preview",
+      prompt:
+        "Public-facing establishing environment for chapter 3 talk 2. Base this on the place Sato first sees in his part of the talk. Emphasize architecture, approach path, weather, lighting, time of day, quiet daily atmosphere, and the visible front side of the setting.",
+      negativePrompt:
+        "combat, action pose, readable text, collage, split panel, heavy crowd, obvious threat",
+      sourceRefs: [
+        "project/01_plot.md",
+        "project/03_worldbuilding.md",
+        "project/04_chapter_outline.md",
+      ],
+    },
+  ];
+}
+
+function buildBackgroundConceptTemplate(options) {
   return {
     spec: {
       globalPrompt:
         "Create a photorealistic cinematic environment image for a modern web novel. Emphasize atmosphere, lighting, believable architecture, realistic materials, and a unified live-action visual language shared with all other generated assets.",
       globalNegativePrompt:
         "anime, manga, cel shading, cartoon, text, logo, watermark, character close-up, deformed architecture, low detail",
-      fixedWidth: 1440,
-      fixedHeight: 2304,
+      fixedWidth: 1920,
+      fixedHeight: 1080,
       outputDir: "project/assets/world",
       defaultModel: "gemini-3.1-flash-image-preview",
     },
-    backgrounds: [],
+    backgrounds: isSatoSeries(options) ? buildTalkBackgroundEntries() : [],
   };
 }
 
@@ -808,15 +918,15 @@ function buildSceneCharacterReferencesTemplate(options) {
     return {
       spec: {
         globalPrompt:
-          "Create one photorealistic cinematic scene image for a modern web novel. Keep the style consistent with the title, character, and background assets. Use realistic anatomy, realistic materials, and live-action-like lighting.",
+          "Create one photorealistic cinematic 16:9 scene image for a modern web novel. Keep the style consistent with the title, character, and talk-level background prompts. Use realistic anatomy, realistic materials, and live-action-like lighting.",
         globalNegativePrompt:
           "anime, manga, cel shading, cartoon, text, logo, watermark, collage, split panel, multiple moments in one frame, deformed anatomy",
-        fixedWidth: 1080,
-        fixedHeight: 1920,
+        fixedWidth: 1920,
+        fixedHeight: 1080,
         outputDir: "project/assets/episodes",
         defaultModel: "gemini-3.1-flash-image-preview",
         promptSuffix:
-          "Use the installment-specific episode portraits rather than the canonical portraits directly. For Sato-side images, Sato is dominant and any Sera presence must stay clearly separate and unreadable as a companion. For Sera-side images, Sera is dominant, the attacker must not resemble Sato, and Sato must remain an unaware background figure looking elsewhere."
+          "Use the installment-specific episode portraits rather than the canonical portraits directly. For Sato-side images, Sato is dominant and any Sera presence must stay clearly separate and unreadable as a companion. For Sera-side images, Sera is dominant, the attacker must not resemble Sato, and Sato must remain an unaware background figure looking elsewhere. Compose for a 1920x1080 delivery with the main subjects near the center and safe margins on both sides so the image also works in portrait scrolling layouts."
       },
       characters: [
         {
@@ -843,11 +953,11 @@ function buildSceneCharacterReferencesTemplate(options) {
   return {
     spec: {
       globalPrompt:
-        "Create one photorealistic cinematic scene image for a modern web novel. Keep the style consistent with the title, character, and background assets. Use realistic anatomy, realistic materials, and live-action-like lighting.",
+        "Create one photorealistic cinematic 16:9 scene image for a modern web novel. Keep the style consistent with the title, character, and talk-level background prompts. Use realistic anatomy, realistic materials, and live-action-like lighting.",
       globalNegativePrompt:
         "anime, manga, cel shading, cartoon, text, logo, watermark, collage, split panel, multiple moments in one frame, deformed anatomy",
-      fixedWidth: 1080,
-      fixedHeight: 1920,
+      fixedWidth: 1920,
+      fixedHeight: 1080,
       outputDir: "project/assets/episodes",
       defaultModel: "gemini-3.1-flash-image-preview",
     },
@@ -995,7 +1105,7 @@ async function main() {
   if (
     await writeFileIfMissing(
       path.join(rootDir, "prompts", "background-concepts.json"),
-      `${JSON.stringify(buildBackgroundConceptTemplate(), null, 2)}\n`,
+      `${JSON.stringify(buildBackgroundConceptTemplate(options), null, 2)}\n`,
     )
   ) {
     created.push("prompts/background-concepts.json");

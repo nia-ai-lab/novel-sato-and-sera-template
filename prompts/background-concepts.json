@@ -1,0 +1,102 @@
+{
+  "spec": {
+    "globalPrompt": "Create a photorealistic cinematic environment image for a modern web novel. Emphasize atmosphere, lighting, believable architecture, realistic materials, and a unified live-action visual language shared with all other generated assets.",
+    "globalNegativePrompt": "anime, manga, cel shading, cartoon, text, logo, watermark, character close-up, deformed architecture, low detail",
+    "fixedWidth": 1920,
+    "fixedHeight": 1080,
+    "outputDir": "project/assets/world",
+    "defaultModel": "gemini-3.1-flash-image-preview"
+  },
+  "backgrounds": [
+    {
+      "id": "talk-001-stage",
+      "talkKey": "chapter-01-talk-01",
+      "chapterLabel": "第1章",
+      "talkLabel": "第1話",
+      "name": "第1章第1話の朝ベランダ背景",
+      "model": "gemini-3.1-flash-image-preview",
+      "prompt": "Cinematic early-summer Sunday morning environment seen from Sato's apartment living room toward the balcony. Show a calm mid-rise Tokyo apartment interior connected to a tidy balcony with pour-over coffee tools, a small plate, potted herbs, soft bedding light, and rooftops beyond with a faint suggestion of the White Heron River district. Emphasize quiet order, fresh air, warm pale gold sunlight, and the elegant beginning of a holiday.",
+      "negativePrompt": "combat, action pose, readable text, collage, split panel, heavy crowd, obvious threat, messy room, luxury penthouse excess",
+      "sourceRefs": [
+        "project/01_plot.md",
+        "project/03_worldbuilding.md",
+        "project/04_chapter_outline.md"
+      ]
+    },
+    {
+      "id": "talk-002-stage",
+      "talkKey": "chapter-01-talk-02",
+      "chapterLabel": "第1章",
+      "talkLabel": "第2話",
+      "name": "第1章第2話の川沿いパン屋背景",
+      "model": "gemini-3.1-flash-image-preview",
+      "prompt": "Cinematic early-summer Sunday morning riverside street leading from a small bakery toward the White Heron River promenade. Show clean bridge railings, open sky, a quiet walkway, paper bread bags, warm fresh light, and only sparse weekend foot traffic. The place should feel breathable, slightly refined, and naturally inviting for a slow holiday walk.",
+      "negativePrompt": "combat, action pose, readable text, collage, split panel, heavy crowd, obvious threat, festival chaos, tourist overload",
+      "sourceRefs": [
+        "project/01_plot.md",
+        "project/03_worldbuilding.md",
+        "project/04_chapter_outline.md"
+      ]
+    },
+    {
+      "id": "talk-003-stage",
+      "talkKey": "chapter-02-talk-01",
+      "chapterLabel": "第2章",
+      "talkLabel": "第1話",
+      "name": "第2章第1話の昼テラス背景",
+      "model": "gemini-3.1-flash-image-preview",
+      "prompt": "Cinematic noon environment at White Heron Riverfront Commons. Show a tasteful riverside terrace with white tabletops, glass and wood architecture, broad daylight, shimmering reflected light from water, and an airy but not crowded Sunday lunch mood. The place should feel modern, polished, and pleasantly open.",
+      "negativePrompt": "combat, action pose, readable text, collage, split panel, heavy crowd, obvious threat, luxury resort excess, empty dead mall feeling",
+      "sourceRefs": [
+        "project/01_plot.md",
+        "project/03_worldbuilding.md",
+        "project/04_chapter_outline.md"
+      ]
+    },
+    {
+      "id": "talk-004-stage",
+      "talkKey": "chapter-02-talk-02",
+      "chapterLabel": "第2章",
+      "talkLabel": "第2話",
+      "name": "第2章第2話の古本街背景",
+      "model": "gemini-3.1-flash-image-preview",
+      "prompt": "Cinematic early-afternoon old-book arcade near the White Heron River district. Show a narrow but welcoming covered lane with old wooden shopfronts, deep shade, paper textures, stacked books visible through windows, soft reflected daylight, and an atmosphere of quiet concentration. It should feel calm, cultured, slightly hidden, and perfect for losing track of time.",
+      "negativePrompt": "combat, action pose, readable text, collage, split panel, heavy crowd, obvious threat, horror darkness, dusty ruin",
+      "sourceRefs": [
+        "project/01_plot.md",
+        "project/03_worldbuilding.md",
+        "project/04_chapter_outline.md"
+      ]
+    },
+    {
+      "id": "talk-005-stage",
+      "talkKey": "chapter-03-talk-01",
+      "chapterLabel": "第3章",
+      "talkLabel": "第1話",
+      "name": "第3章第1話の夕景食事処背景",
+      "model": "gemini-3.1-flash-image-preview",
+      "prompt": "Cinematic dusk riverside dining spot near White Heron River. Show a modest but elegant exterior terrace, amber bridge lights beginning to appear, reflections on the water, early evening sky, and the feeling of a quiet reservation kept by a careful regular. The tone should be intimate, warm, and gently rewarding after a full holiday.",
+      "negativePrompt": "combat, action pose, readable text, collage, split panel, heavy crowd, obvious threat, loud nightlife district, neon overload",
+      "sourceRefs": [
+        "project/01_plot.md",
+        "project/03_worldbuilding.md",
+        "project/04_chapter_outline.md"
+      ]
+    },
+    {
+      "id": "talk-006-stage",
+      "talkKey": "chapter-03-talk-02",
+      "chapterLabel": "第3章",
+      "talkLabel": "第2話",
+      "name": "第3章第2話の夜ベランダ背景",
+      "model": "gemini-3.1-flash-image-preview",
+      "prompt": "Cinematic late-night apartment living room opening to a balcony after a satisfying Sunday. Show a warm standing lamp, a record player or audio corner, a small dessert plate, the balcony railing, distant city lights, and a calm deep-blue night atmosphere. The space should feel lived-in, modest, comfortable, and emotionally complete.",
+      "negativePrompt": "combat, action pose, readable text, collage, split panel, heavy crowd, obvious threat, party mess, luxurious mansion interior",
+      "sourceRefs": [
+        "project/01_plot.md",
+        "project/03_worldbuilding.md",
+        "project/04_chapter_outline.md"
+      ]
+    }
+  ]
+}

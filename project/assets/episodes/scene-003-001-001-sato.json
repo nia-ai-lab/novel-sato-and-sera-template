@@ -1,0 +1,18 @@
+{
+  "episodeId": "scene-003-001-001-sato",
+  "title": "第1節　川面に映る店灯り",
+  "chapterTitle": "第3章　灯りの底",
+  "model": "gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-03-15T03:32:27.268Z",
+  "output": "project/assets/episodes/scene-003-001-001-sato.webp",
+  "rawOutput": "project/assets/episodes/scene-003-001-001-sato.raw.png",
+  "referenceImages": [
+    "project/assets/characters/sato-episode.png"
+  ],
+  "referenceCharacterIds": [
+    "sato-episode"
+  ],
+  "continuityNotes": [],
+  "prompt": "Create one cinematic 16:9 scene illustration for a serial web novel. Do not render any readable text, chapter numbers, talk labels, section labels, captions, subtitles, logos, or UI overlays inside the image. Story context: 第3章　灯りの底 / 第1話　夕景と小さな予約. Shared talk background: 第3章第1話の夕景食事処背景. Background reference prompt: Cinematic dusk riverside dining spot near White Heron River. Show a modest but elegant exterior terrace, amber bridge lights beginning to appear, reflections on the water, early evening sky, and the feeling of a quiet reservation kept by a careful regular. The tone should be intimate, warm, and gently rewarding after a full holiday. Preserve the same place, architecture, time of day, weather, lighting, and atmosphere unless the scene text explicitly changes them. Use the same talk-level setting as the public-facing stage that Sato naturally notices first. Scene focus: 第1節　川面に映る店灯り / サトーパート. Summary: 古本街を出たあとの空は、春の夕方らしく少しだけ青みを残していた。白鷺川沿いへ戻るころには、橋の灯りが一本ずつ水面に落ち始めている。サトーは予約していた小さな食事処の看板を見つけ… Key beats: 古本街を出たあとの空は、春の夕方らしく少しだけ青みを残していた。白鷺川沿いへ戻るころには、橋の灯りが一本ずつ水面に落ち始めている。サトーは予約していた小さな食事処の看板を見つけると、今日は最後まで流れがいいなと静かに思った。 店は川に向いた窓が低く広く取られていて、席に着くと外の明るさがそのまま皿の縁へ移ってくる。温かい前菜と軽い魚料理、それに白ワインを少しだけ。日曜の締めとしては、これ以上気取らないほうがむしろちょうどいい。 給仕が予約表を確認するあいだ、入口の外に黒い車が短く止まるのが見えた。すぐに誰かが店の前で何事かを確かめ、車は少し先へ流れていく。迎えの行き違いか、近くの店の予約客と混ざったのだろうとサトーは受け取った。 「予約の多い時間は、ああいう行き違いもあるよな」 Use the supplied character reference images to preserve these canonical looks: sato-episode: サトー. Keep him consistent with the episode-specific portrait generated from the canonical Sato image. Compose for a 1920x1080 delivery, keep main subjects near the center, and preserve enough left/right safe margin so the image still reads well in portrait scrolling mode. Use the installment-specific Sato portrait for Sato. Use Sera's canonical portrait directly without redesigning her for this installment. Sera never carries knives or other bladed weapons; if she uses a tool, keep it small, discreet, and non-bladed. For Sato-side images, Sato is dominant and any Sera presence must stay clearly separate and unreadable as a casual companion. For Sera-side images, Sera is dominant, the attacker must not resemble Sato, and Sato must remain an unaware background figure looking elsewhere. Preserve the feeling of a refined but ordinary Sunday, and compose for a 1920x1080 delivery with the main subjects near the center and safe margins on both sides so the image also works in portrait scrolling layouts.",
+  "responseTexts": []
+}

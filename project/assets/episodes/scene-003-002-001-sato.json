@@ -1,0 +1,18 @@
+{
+  "episodeId": "scene-003-002-001-sato",
+  "title": "第1節　静かな甘味",
+  "chapterTitle": "第3章　灯りの底",
+  "model": "gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-03-15T03:32:51.046Z",
+  "output": "project/assets/episodes/scene-003-002-001-sato.webp",
+  "rawOutput": "project/assets/episodes/scene-003-002-001-sato.raw.png",
+  "referenceImages": [
+    "project/assets/characters/sato-episode.png"
+  ],
+  "referenceCharacterIds": [
+    "sato-episode"
+  ],
+  "continuityNotes": [],
+  "prompt": "Create one cinematic 16:9 scene illustration for a serial web novel. Do not render any readable text, chapter numbers, talk labels, section labels, captions, subtitles, logos, or UI overlays inside the image. Story context: 第3章　灯りの底 / 第2話　夜更けのベランダ. Shared talk background: 第3章第2話の夜ベランダ背景. Background reference prompt: Cinematic late-night apartment living room opening to a balcony after a satisfying Sunday. Show a warm standing lamp, a record player or audio corner, a small dessert plate, the balcony railing, distant city lights, and a calm deep-blue night atmosphere. The space should feel lived-in, modest, comfortable, and emotionally complete. Preserve the same place, architecture, time of day, weather, lighting, and atmosphere unless the scene text explicitly changes them. Use the same talk-level setting as the public-facing stage that Sato naturally notices first. Scene focus: 第1節　静かな甘味 / サトーパート. Summary: 帰宅して上着を椅子へ掛けると、部屋の空気は朝より少しだけ親しく感じられた。ベランダの向こうには、四月の夜らしい澄んだ暗さが広がっている。サトーは冷蔵庫から小さなプリンを取り出し… Key beats: 帰宅して上着を椅子へ掛けると、部屋の空気は朝より少しだけ親しく感じられた。ベランダの向こうには、四月の夜らしい澄んだ暗さが広がっている。サトーは冷蔵庫から小さなプリンを取り出し、湯を沸かして、レコード棚の前で今夜の一枚を選んだ。 針を落とすと、柔らかなピアノが部屋の隅まできれいに行き渡る。昼も夜も外で気分よく過ごした日に、最後だけ家の静けさへ戻ってこられるのは贅沢だった。照明は一つだけでいいし、甘いものも少しでいい。足りている感じが何より落ち着く。 天井の向こうで、かすかに硬いものが擦れるような音がした。上の階か屋上で何か動かしているのかもしれない。夜に聞くと少しだけ気になるが、管理の作業ならむしろ明日まで持ち越さないほうがありがたいとも思える。 「上で何か点検でもしてるのかな。今夜のうちに済むなら、そのほうが助かる」 Use the supplied character reference images to preserve these canonical looks: sato-episode: サトー. Keep him consistent with the episode-specific portrait generated from the canonical Sato image. Compose for a 1920x1080 delivery, keep main subjects near the center, and preserve enough left/right safe margin so the image still reads well in portrait scrolling mode. Use the installment-specific Sato portrait for Sato. Use Sera's canonical portrait directly without redesigning her for this installment. Sera never carries knives or other bladed weapons; if she uses a tool, keep it small, discreet, and non-bladed. For Sato-side images, Sato is dominant and any Sera presence must stay clearly separate and unreadable as a casual companion. For Sera-side images, Sera is dominant, the attacker must not resemble Sato, and Sato must remain an unaware background figure looking elsewhere. Preserve the feeling of a refined but ordinary Sunday, and compose for a 1920x1080 delivery with the main subjects near the center and safe margins on both sides so the image also works in portrait scrolling layouts.",
+  "responseTexts": []
+}

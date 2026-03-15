@@ -1,0 +1,20 @@
+{
+  "episodeId": "scene-003-002-002-sera",
+  "title": "第2節　屋上の細い通路",
+  "chapterTitle": "第3章　灯りの底",
+  "model": "gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-03-15T03:33:07.753Z",
+  "output": "project/assets/episodes/scene-003-002-002-sera.webp",
+  "rawOutput": "project/assets/episodes/scene-003-002-002-sera.raw.png",
+  "referenceImages": [
+    "project/assets/characters/sato-episode.png",
+    "project/assets/characters/sera.png"
+  ],
+  "referenceCharacterIds": [
+    "sato-episode",
+    "sera"
+  ],
+  "continuityNotes": [],
+  "prompt": "Create one cinematic 16:9 scene illustration for a serial web novel. Do not render any readable text, chapter numbers, talk labels, section labels, captions, subtitles, logos, or UI overlays inside the image. Story context: 第3章　灯りの底 / 第2話　夜更けのベランダ. Shared talk background: 第3章第2話の夜ベランダ背景. Background reference prompt: Cinematic late-night apartment living room opening to a balcony after a satisfying Sunday. Show a warm standing lamp, a record player or audio corner, a small dessert plate, the balcony railing, distant city lights, and a calm deep-blue night atmosphere. The space should feel lived-in, modest, comfortable, and emotionally complete. Preserve the same place, architecture, time of day, weather, lighting, and atmosphere unless the scene text explicitly changes them. Use the same talk-level setting as the shared stage, but show it from a hidden security-side, reverse angle, blind spot, rear approach, service path, or protected backside when appropriate. Scene focus: 第2節　屋上の細い通路 / セラパート. Summary: 屋上側の侵入は、最後ほど雑になる。 一日じゅう失敗した班ほど、終盤で強引な近道を選びやすい。隣接区画からの細い通路、手すりを越えるワイヤー、ベランダ上部の短い死角。セラは夕方の… Key beats: 屋上側の侵入は、最後ほど雑になる。 一日じゅう失敗した班ほど、終盤で強引な近道を選びやすい。隣接区画からの細い通路、手すりを越えるワイヤー、ベランダ上部の短い死角。セラは夕方の時点でその線を捨てていなかった。だから夜風の揺れ方が一度だけ不自然に変わった瞬間、もう位置は読めていた。 一人目は手すりの外側、二人目は屋上機器の陰、三人目が通路の奥で受ける役。セラは隣接区画の扉から逆順に入った。ワイヤーを張る指を先に打ち、金具の噛み音が大きくなる前に布で受ける。細い通路では、体勢を崩した側がそのまま敗ける。 短い衝突はあったが、怒声になる前に終わった。ひとりを壁へ、ひとりを床へ、最後のひとりには通路灯の死角で眠りを落とす。室内まで届いたのは、せいぜい上で何かを擦った程度の小さな気配だけだろう。それなら充分だった。 Use the supplied character reference images to preserve these canonical looks: sato-episode: サトー. Keep him consistent with the episode-specific portrait generated from the canonical Sato image. sera: セラ. Keep her consistent with the canonical Sera portrait, including the visible cat-ear support-security unit, without adding installment-specific redesign. The support unit is completed by the cat-ear headband alone, so do not add backpack rigs, back-mounted devices, extra mechanical arms, exoskeleton parts, visible cable bundles, or any other extra machinery. Do not give her knives, daggers, swords, blades, or any other bladed weapon. Compose for a 1920x1080 delivery, keep main subjects near the center, and preserve enough left/right safe margin so the image still reads well in portrait scrolling mode. Use the installment-specific Sato portrait for Sato. Use Sera's canonical portrait directly without redesigning her for this installment. Sera never carries knives or other bladed weapons; if she uses a tool, keep it small, discreet, and non-bladed. For Sato-side images, Sato is dominant and any Sera presence must stay clearly separate and unreadable as a casual companion. For Sera-side images, Sera is dominant, the attacker must not resemble Sato, and Sato must remain an unaware background figure looking elsewhere. Preserve the feeling of a refined but ordinary Sunday, and compose for a 1920x1080 delivery with the main subjects near the center and safe margins on both sides so the image also works in portrait scrolling layouts.",
+  "responseTexts": []
+}

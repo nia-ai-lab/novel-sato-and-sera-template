@@ -1,0 +1,57 @@
+{
+  "spec": {
+    "globalPrompt": "Create one photorealistic cinematic 16:9 scene image for a modern web novel. Keep the style consistent with the title, character, and talk-level background prompts. Use realistic anatomy, realistic materials, and live-action-like lighting.",
+    "globalNegativePrompt": "anime, manga, cel shading, cartoon, text, logo, watermark, collage, split panel, multiple moments in one frame, deformed anatomy",
+    "fixedWidth": 1920,
+    "fixedHeight": 1080,
+    "outputDir": "project/assets/episodes",
+    "defaultModel": "gemini-3.1-flash-image-preview",
+    "promptSuffix": "Use the installment-specific Sato portrait for Sato. Use Sera's canonical portrait directly without redesigning her for this installment. Sera never carries knives or other bladed weapons; if she uses a tool, keep it small, discreet, and non-bladed. For Sato-side images, Sato is dominant and any Sera presence must stay clearly separate and unreadable as a casual companion. For Sera-side images, Sera is dominant, the attacker must not resemble Sato, and Sato must remain an unaware background figure looking elsewhere. Preserve the feeling of a refined but ordinary Sunday, and compose for a 1920x1080 delivery with the main subjects near the center and safe margins on both sides so the image also works in portrait scrolling layouts."
+  },
+  "characters": [
+    {
+      "id": "sato-episode",
+      "name": "サトー",
+      "aliases": [
+        "佐藤一",
+        "佐藤",
+        "サトーさん"
+      ],
+      "referenceImage": "project/assets/characters/sato-episode.png",
+      "visualRules": "Keep him consistent with the episode-specific portrait generated from the canonical Sato image."
+    },
+    {
+      "id": "sera",
+      "name": "セラ",
+      "aliases": [
+        "猫耳メイド",
+        "並走者",
+        "護衛"
+      ],
+      "referenceImage": "project/assets/characters/sera.png",
+      "visualRules": "Keep her consistent with the canonical Sera portrait, including the visible cat-ear support-security unit, without adding installment-specific redesign. The support unit is completed by the cat-ear headband alone, so do not add backpack rigs, back-mounted devices, extra mechanical arms, exoskeleton parts, visible cable bundles, or any other extra machinery. Do not give her knives, daggers, swords, blades, or any other bladed weapon."
+    }
+  ],
+  "sceneOverrides": {
+    "scene-001-001-002-sera": {
+      "continuityNotes": [
+        "Sera's support unit must be only the cat-ear headband visible on her head.",
+        "Do not attach any extra machinery to her back, shoulders, waist, or limbs."
+      ],
+      "negativePrompt": "No backpack rig, no back-mounted machine, no extra mechanical arms, no exoskeleton, no visible cable bundle, no sci-fi harness, no drone attachment."
+    },
+    "scene-002-002-002-sera": {
+      "focusCharacterIds": [
+        "sera"
+      ],
+      "continuityNotes": [
+        "Sera must not carry or display any knife, dagger, blade, sword, or other bladed weapon.",
+        "If a tool is visible, it must be a small non-bladed utility tool only.",
+        "Sera must be the clear foreground subject of the image.",
+        "Sato may appear only as a small, unaware background figure or be omitted entirely."
+      ],
+      "negativePrompt": "No knife, no dagger, no blade, no sword, no box cutter, no scalpel, no bladed weapon, no stabbing pose, no Sato-centered composition, no male foreground lead, no scene where Sera is background only.",
+      "promptSuffix": "Make Sera the unmistakable visual protagonist in the foreground or midground. Sato must not dominate the frame."
+    }
+  }
+}

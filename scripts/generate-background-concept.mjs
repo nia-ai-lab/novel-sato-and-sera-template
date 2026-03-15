@@ -109,7 +109,7 @@ function buildPrompt(spec, entry) {
   return [
     spec.globalPrompt,
     entry.prompt,
-    `Final delivery will be cropped to ${spec.fixedWidth}x${spec.fixedHeight}. Keep the main focal area centered with safe margins.`,
+    `Final delivery will be cropped to ${spec.fixedWidth}x${spec.fixedHeight}. Keep the main focal area centered with safe margins and leave enough side information for widescreen composition.`,
     `Negative prompt: ${spec.globalNegativePrompt}, ${entry.negativePrompt || ""}`,
   ].join(" ");
 }
@@ -130,7 +130,7 @@ async function generateBackground(entry, promptFile, apiKey) {
     generationConfig: {
       responseModalities: ["TEXT", "IMAGE"],
       imageConfig: {
-        aspectRatio: "9:16",
+        aspectRatio: "16:9",
         imageSize: "2K",
       },
     },
@@ -176,11 +176,15 @@ async function generateBackground(entry, promptFile, apiKey) {
   const metadata = {
     id: entry.id,
     name: entry.name,
+    talkKey: entry.talkKey || null,
+    chapterLabel: entry.chapterLabel || null,
+    talkLabel: entry.talkLabel || null,
     model: entry.model,
     generatedAt: new Date().toISOString(),
     output: path.relative(rootDir, finalPath),
     rawOutput: path.relative(rootDir, rawPath),
     prompt,
+    sourceRefs: entry.sourceRefs || [],
     responseTexts: extractTextResponses(responseJson),
   };
 

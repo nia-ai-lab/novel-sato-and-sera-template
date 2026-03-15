@@ -11,7 +11,7 @@ const manuscriptDir = path.join(rootDir, "project", "manuscript");
 const fullNovelPath = path.join(manuscriptDir, "full_novel.md");
 const projectOverviewPath = path.join(rootDir, "project", "00_project_overview.md");
 const projectAssetsDir = path.join(rootDir, "project", "assets");
-const templateDir = path.join(rootDir, "soudoku-novel-builder", "assets", "mobile-reader");
+const templateDir = path.join(rootDir, "soudoku-novel-builder", "assets", "responsive-reader");
 
 const palettes = [
   { mood: "sunrise" },
@@ -401,6 +401,7 @@ async function main() {
     titleImage: (await exists(titleImagePath)) ? "./images/title/title-cover.webp" : null,
     titleImageAlt: `${title} のタイトルビジュアル`,
     generatedAt: new Date().toISOString(),
+    imageAspectRatio: "16:9",
     talkCount: new Set(parsed.scenes.map((scene) => scene.talkKey)).size,
     sceneCount: parsed.scenes.length,
     scenes: [],
@@ -442,7 +443,7 @@ async function main() {
   await cleanDocsDir();
   await copyGeneratedAssets(parsed.scenes.map((scene) => scene.id));
 
-  const description = `${title}を、画像付きの縦スクロールWeb小説として読める静的サイト。`;
+  const description = `${title}を、縦スクロールで読めるレスポンシブな画像付きWeb小説として公開する静的サイト。`;
   const indexHtml = templates.indexTemplate
     .replace("__TITLE__", escapeHtml(title))
     .replace("__DESCRIPTION__", escapeHtml(description));
@@ -455,7 +456,7 @@ async function main() {
     writeFile(path.join(docsDir, ".nojekyll"), "", "utf8"),
   ]);
 
-  process.stdout.write(`Built mobile web novel: ${story.sceneCount} scenes -> docs\n`);
+  process.stdout.write(`Built responsive web novel: ${story.sceneCount} scenes -> docs\n`);
 }
 
 main().catch((error) => {

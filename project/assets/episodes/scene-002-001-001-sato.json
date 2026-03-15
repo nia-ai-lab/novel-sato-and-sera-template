@@ -1,0 +1,18 @@
+{
+  "episodeId": "scene-002-001-001-sato",
+  "title": "第1節　日向の皿",
+  "chapterTitle": "第2章　白い川風",
+  "model": "gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-03-15T03:16:06.080Z",
+  "output": "project/assets/episodes/scene-002-001-001-sato.webp",
+  "rawOutput": "project/assets/episodes/scene-002-001-001-sato.raw.png",
+  "referenceImages": [
+    "project/assets/characters/sato-episode.png"
+  ],
+  "referenceCharacterIds": [
+    "sato-episode"
+  ],
+  "continuityNotes": [],
+  "prompt": "Create one cinematic 16:9 scene illustration for a serial web novel. Do not render any readable text, chapter numbers, talk labels, section labels, captions, subtitles, logos, or UI overlays inside the image. Story context: 第2章　白い川風 / 第1話　日向のテラス席. Shared talk background: 第2章第1話の昼テラス背景. Background reference prompt: Cinematic noon environment at White Heron Riverfront Commons. Show a tasteful riverside terrace with white tabletops, glass and wood architecture, broad daylight, shimmering reflected light from water, and an airy but not crowded Sunday lunch mood. The place should feel modern, polished, and pleasantly open. Preserve the same place, architecture, time of day, weather, lighting, and atmosphere unless the scene text explicitly changes them. Use the same talk-level setting as the public-facing stage that Sato naturally notices first. Scene focus: 第1節　日向の皿 / サトーパート. Summary: 四月初旬の昼前、白鷺川リバーフロント・コモンズは、朝の静けさをそのまま少しだけ明るくしたような場所だった。ガラス越しの光も、白い床に跳ねる影も、春の日曜のために整えられているよ… Key beats: 四月初旬の昼前、白鷺川リバーフロント・コモンズは、朝の静けさをそのまま少しだけ明るくしたような場所だった。ガラス越しの光も、白い床に跳ねる影も、春の日曜のために整えられているように見える。サトーは川沿いのテラス席に通されると、これだよなと胸の内で小さく満足した。 メニューに長く迷わないのも、いい休みの条件だった。冷たい前菜と鶏のロースト、それから炭酸水。昼から贅沢をしすぎない程度に、でもきちんと外食らしいものを選ぶ。日差しは春らしくやわらかく温かく、川から抜ける風が皿の湯気だけをやさしく散らしてくれる。 料理が運ばれてくる途中、通路脇の保冷ボックスが二度ほど置き直された。配膳の人間にしては動きが落ち着かず、白い箱だけがやけに目につく。けれど催事でもあるのかもしれないし、日曜の施設は平日より人の組み方が難しいのだろうとサトーは考えた。気持ちよく昼を食べるには、多少の不手際は景色の一部として流すほうがいい。 「催しの日は裏方も慌ただしいんだろう。客の昼が静かなら、それでいい」 Use the supplied character reference images to preserve these canonical looks: sato-episode: サトー. Keep him consistent with the episode-specific portrait generated from the canonical Sato image. Compose for a 1920x1080 delivery, keep main subjects near the center, and preserve enough left/right safe margin so the image still reads well in portrait scrolling mode. Use the installment-specific Sato portrait for Sato. Use Sera's canonical portrait directly without redesigning her for this installment. For Sato-side images, Sato is dominant and any Sera presence must stay clearly separate and unreadable as a casual companion. For Sera-side images, Sera is dominant, the attacker must not resemble Sato, and Sato must remain an unaware background figure looking elsewhere. Preserve the feeling of a refined but ordinary Sunday, and compose for a 1920x1080 delivery with the main subjects near the center and safe margins on both sides so the image also works in portrait scrolling layouts.",
+  "responseTexts": []
+}

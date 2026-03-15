@@ -284,6 +284,7 @@ async function generateEpisode(episode, manifest, refMap, apiKey, outputDir, for
       episode.prompt,
       `Global negative prompt: ${manifest.spec.globalNegativePrompt}.`,
       `Episode negative prompt: ${episode.negativePrompt}.`,
+      `Final delivery is ${manifest.spec.fixedWidth}x${manifest.spec.fixedHeight}. Keep the main subjects near the center with safe margins on both sides for responsive reading layouts.`,
     ].join(" "),
   });
 
@@ -296,7 +297,7 @@ async function generateEpisode(episode, manifest, refMap, apiKey, outputDir, for
     generationConfig: {
       responseModalities: ["TEXT", "IMAGE"],
       imageConfig: {
-        aspectRatio: "9:16",
+        aspectRatio: "16:9",
         imageSize: "2K",
       },
     },

@@ -1,0 +1,25 @@
+{
+  "episodeId": "scene-002-002-002-sera",
+  "title": "第2節　閉じた搬入口",
+  "chapterTitle": "第2章　白い川風",
+  "model": "gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-03-15T03:30:12.035Z",
+  "output": "project/assets/episodes/scene-002-002-002-sera.webp",
+  "rawOutput": "project/assets/episodes/scene-002-002-002-sera.raw.png",
+  "referenceImages": [
+    "project/assets/characters/sato-episode.png",
+    "project/assets/characters/sera.png"
+  ],
+  "referenceCharacterIds": [
+    "sato-episode",
+    "sera"
+  ],
+  "continuityNotes": [
+    "Sera must not carry or display any knife, dagger, blade, sword, or other bladed weapon.",
+    "If a tool is visible, it must be a small non-bladed utility tool only.",
+    "Sera must be the clear foreground subject of the image.",
+    "Sato may appear only as a small, unaware background figure or be omitted entirely."
+  ],
+  "prompt": "Create one cinematic 16:9 scene illustration for a serial web novel. Do not render any readable text, chapter numbers, talk labels, section labels, captions, subtitles, logos, or UI overlays inside the image. Story context: 第2章　白い川風 / 第2話　古本街の影. Shared talk background: 第2章第2話の古本街背景. Background reference prompt: Cinematic early-afternoon old-book arcade near the White Heron River district. Show a narrow but welcoming covered lane with old wooden shopfronts, deep shade, paper textures, stacked books visible through windows, soft reflected daylight, and an atmosphere of quiet concentration. It should feel calm, cultured, slightly hidden, and perfect for losing track of time. Preserve the same place, architecture, time of day, weather, lighting, and atmosphere unless the scene text explicitly changes them. Use the same talk-level setting as the shared stage, but show it from a hidden security-side, reverse angle, blind spot, rear approach, service path, or protected backside when appropriate. Scene focus: 第2節　閉じた搬入口 / セラパート. Summary: 棚の軋みは合図だった。 古い書店に紛れ込むなら、事故を装うのが最も簡単だ。倒れる棚、避難を促す声、裏口への誘導。搬入口の先に拘束役を置けば、通報より先に姿を消せる。セラは半開き… Key beats: 棚の軋みは合図だった。 古い書店に紛れ込むなら、事故を装うのが最も簡単だ。倒れる棚、避難を促す声、裏口への誘導。搬入口の先に拘束役を置けば、通報より先に姿を消せる。セラは半開きの扉の隙間から内部配置を見ただけで、その浅い計画図を頭の中でたたんだ。 仕掛けは棚板の裏に仕込まれた細いワイヤーだった。引けば一列だけ崩れ、客を安全導線へ誘える程度の混乱が起きる。セラは書架の影へ滑り込み、テンションのかかった線だけを小さな解除具で弾き外す。軋みはそこでただの軋みに戻った。 搬入口側には二人。片方は店員風の前掛けをつけ、片方は荷役用の手袋をしたまま扉の角に寄っている。セラは積まれた段ボールの陰から一歩で間合いを詰め、前掛けの男の喉元ではなく肩の支点を落とした。声を上げさせない。手袋の男には開いた扉をそのままぶつけ、外の明るさの中へ崩す。 Use the supplied character reference images to preserve these canonical looks: sato-episode: サトー. Keep him consistent with the episode-specific portrait generated from the canonical Sato image. sera: セラ. Keep her consistent with the canonical Sera portrait, including the visible cat-ear support-security unit, without adding installment-specific redesign. The support unit is completed by the cat-ear headband alone, so do not add backpack rigs, back-mounted devices, extra mechanical arms, exoskeleton parts, visible cable bundles, or any other extra machinery. Do not give her knives, daggers, swords, blades, or any other bladed weapon. Compose for a 1920x1080 delivery, keep main subjects near the center, and preserve enough left/right safe margin so the image still reads well in portrait scrolling mode. Focus characters: sera. Keep them clearly readable in the foreground or midground. Continuity notes: Sera must not carry or display any knife, dagger, blade, sword, or other bladed weapon. If a tool is visible, it must be a small non-bladed utility tool only. Sera must be the clear foreground subject of the image. Sato may appear only as a small, unaware background figure or be omitted entirely. Use the installment-specific Sato portrait for Sato. Use Sera's canonical portrait directly without redesigning her for this installment. Sera never carries knives or other bladed weapons; if she uses a tool, keep it small, discreet, and non-bladed. For Sato-side images, Sato is dominant and any Sera presence must stay clearly separate and unreadable as a casual companion. For Sera-side images, Sera is dominant, the attacker must not resemble Sato, and Sato must remain an unaware background figure looking elsewhere. Preserve the feeling of a refined but ordinary Sunday, and compose for a 1920x1080 delivery with the main subjects near the center and safe margins on both sides so the image also works in portrait scrolling layouts.  Make Sera the unmistakable visual protagonist in the foreground or midground. Sato must not dominate the frame.",
+  "responseTexts": []
+}

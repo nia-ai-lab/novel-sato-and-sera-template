@@ -1,0 +1,25 @@
+{
+  "episodeId": "scene-001-001-002-sera",
+  "title": "第2節　閉じたメーターボックスの内側",
+  "chapterTitle": "第1章　朝の湯気",
+  "model": "gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-03-15T03:11:54.390Z",
+  "output": "project/assets/episodes/scene-001-001-002-sera.webp",
+  "rawOutput": "project/assets/episodes/scene-001-001-002-sera.raw.png",
+  "referenceImages": [
+    "project/assets/characters/sato-episode.png",
+    "project/assets/characters/sera.png"
+  ],
+  "referenceCharacterIds": [
+    "sato-episode",
+    "sera"
+  ],
+  "continuityNotes": [
+    "Sera's support unit must be only the cat-ear headband visible on her head.",
+    "Do not attach any extra machinery to her back, shoulders, waist, or limbs."
+  ],
+  "prompt": "Create one cinematic 16:9 scene illustration for a serial web novel. Do not render any readable text, chapter numbers, talk labels, section labels, captions, subtitles, logos, or UI overlays inside the image. Story context: 第1章　朝の湯気 / 第1話　珈琲と点検札. Shared talk background: 第1章第1話の朝ベランダ背景. Background reference prompt: Cinematic early-summer Sunday morning environment seen from Sato's apartment living room toward the balcony. Show a calm mid-rise Tokyo apartment interior connected to a tidy balcony with pour-over coffee tools, a small plate, potted herbs, soft bedding light, and rooftops beyond with a faint suggestion of the White Heron River district. Emphasize quiet order, fresh air, warm pale gold sunlight, and the elegant beginning of a holiday. Preserve the same place, architecture, time of day, weather, lighting, and atmosphere unless the scene text explicitly changes them. Use the same talk-level setting as the shared stage, but show it from a hidden security-side, reverse angle, blind spot, rear approach, service path, or protected backside when appropriate. Scene focus: 第2節　閉じたメーターボックスの内側 / セラパート. Summary: 札は雑だった。 紙の厚みも、角の丸め方も、管理会社がいつも使うものと違う。印字された連絡先は本物に一桁だけ似せてある。セラは共用廊下の死角でその札を一瞥しただけで、今日の班が「… Key beats: 札は雑だった。 紙の厚みも、角の丸め方も、管理会社がいつも使うものと違う。印字された連絡先は本物に一桁だけ似せてある。セラは共用廊下の死角でその札を一瞥しただけで、今日の班が「静かに持っていく」つもりで来ていると理解した。 二人組の偽装作業員は、工具箱に見せかけた拘束具一式を持っていた。ひとりがメーターボックスを開け、もうひとりがサービスエレベーター側の導線を確認する。朝の建物がまだ眠っていると思っている者の動きだった。 セラは階段室から一歩だけ出た。猫耳型の支援ユニットが拾った小さな無線のノイズが、耳の奥で薄く弾ける。最初の男が振り返るより先に、彼女は手首を切り返して工具箱を床へ落とし、肘を支点にその体を壁へ預けさせた。音は、蓋の鈍いひとつで済んだ。 Use the supplied character reference images to preserve these canonical looks: sato-episode: サトー. Keep him consistent with the episode-specific portrait generated from the canonical Sato image. sera: セラ. Keep her consistent with the canonical Sera portrait, including the visible cat-ear support-security unit, without adding installment-specific redesign. The support unit is completed by the cat-ear headband alone, so do not add backpack rigs, back-mounted devices, extra mechanical arms, exoskeleton parts, visible cable bundles, or any other extra machinery. Compose for a 1920x1080 delivery, keep main subjects near the center, and preserve enough left/right safe margin so the image still reads well in portrait scrolling mode. Continuity notes: Sera's support unit must be only the cat-ear headband visible on her head. Do not attach any extra machinery to her back, shoulders, waist, or limbs. Use the installment-specific Sato portrait for Sato. Use Sera's canonical portrait directly without redesigning her for this installment. For Sato-side images, Sato is dominant and any Sera presence must stay clearly separate and unreadable as a casual companion. For Sera-side images, Sera is dominant, the attacker must not resemble Sato, and Sato must remain an unaware background figure looking elsewhere. Preserve the feeling of a refined but ordinary Sunday, and compose for a 1920x1080 delivery with the main subjects near the center and safe margins on both sides so the image also works in portrait scrolling layouts.",
+  "responseTexts": [
+    "I have created the cinematic 16:9 illustration for the novel chapter 'Closed inside the Meter Box.' As detailed in the key beats, I have rendered Sera in a corridor's blind spot, effortlessly pinning the fake maintenance worker against the wall while keeping him propped on his elbow to avoid making noise. The open toolbox with restraint gear and the distinct 'Inspection Tag'—which serves as the key evidence—are both visible on the floor near the center. The background features the specific elevator and balcony details you requested, maintaining consistency with the apartment setting."
+  ]
+}

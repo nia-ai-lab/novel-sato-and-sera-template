@@ -1,0 +1,18 @@
+{
+  "id": "talk-004-stage",
+  "name": "第2章第2話の古本街背景",
+  "talkKey": "chapter-02-talk-02",
+  "chapterLabel": "第2章",
+  "talkLabel": "第2話",
+  "model": "gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-03-15T02:37:16.674Z",
+  "output": "project/assets/world/talk-004-stage.webp",
+  "rawOutput": "project/assets/world/talk-004-stage.raw.png",
+  "prompt": "Create a photorealistic cinematic environment image for a modern web novel. Emphasize atmosphere, lighting, believable architecture, realistic materials, and a unified live-action visual language shared with all other generated assets. Cinematic early-afternoon old-book arcade near the White Heron River district. Show a narrow but welcoming covered lane with old wooden shopfronts, deep shade, paper textures, stacked books visible through windows, soft reflected daylight, and an atmosphere of quiet concentration. It should feel calm, cultured, slightly hidden, and perfect for losing track of time. Final delivery will be cropped to 1920x1080. Keep the main focal area centered with safe margins and leave enough side information for widescreen composition. Negative prompt: anime, manga, cel shading, cartoon, text, logo, watermark, character close-up, deformed architecture, low detail, combat, action pose, readable text, collage, split panel, heavy crowd, obvious threat, horror darkness, dusty ruin",
+  "sourceRefs": [
+    "project/01_plot.md",
+    "project/03_worldbuilding.md",
+    "project/04_chapter_outline.md"
+  ],
+  "responseTexts": []
+}

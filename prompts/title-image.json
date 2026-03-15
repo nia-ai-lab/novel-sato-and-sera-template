@@ -1,0 +1,21 @@
+{
+  "spec": {
+    "globalPrompt": "Create a photorealistic cinematic illustration for a modern web novel. Keep lighting, materials, anatomy, and faces grounded in live-action realism. Maintain a unified realistic visual language across all generated assets.",
+    "globalNegativePrompt": "anime, manga, cel shading, cartoon, illustration with flat shading, text, logo, watermark, collage, split panel, deformed anatomy, low detail face, extra limbs",
+    "fixedWidth": 1920,
+    "fixedHeight": 1080
+  },
+  "titleImage": {
+    "id": "title-cover",
+    "model": "gemini-3.1-flash-image-preview",
+    "outputDir": "project/assets/title",
+    "referenceImages": [
+      "project/assets/characters/sato-episode.png",
+      "project/assets/characters/sera.png",
+      "project/assets/world/talk-001-stage.webp",
+      "project/assets/world/talk-005-stage.webp"
+    ],
+    "prompt": "『おっさんサトーの気ままな休日』とサブタイトル『密かに猫耳メイド護衛付き』の世界観と読後感が一目で伝わるタイトルビジュアルを生成する。四月初旬の温かな日曜日、川沿いのテラス席でサトーがひとり静かにコーヒーを飲んでいる場面を中心にする。サトーとセラは supplied reference images の見た目をそのまま使い、顔、髪型、衣装、配色、シルエットを変えない。サトーは current episode portrait の灰色シャツと白Tシャツの休日姿をそのまま保ち、セラは canonical portrait の黒と白の猫耳メイド服、白手袋、編み上げブーツ、猫耳カチューシャをそのまま保つ。セラの衣装を別の私服や暗色スーツに変えない。セラは手ぶらで、バッグ、トート、ハンドバッグ、買い物袋、リュックなどの余計な持ち物を持たせない。サトーは前景または中景のテーブル席でコーヒーカップを手にした主役として大きく見せる。セラはその背後の歩道や川沿いの欄干近くに佇み、護衛として周囲を見ている。セラは背景側に置くが、小さすぎる遠景にはせず、顔とメイド服がはっきり分かる大きさで見せる。二人は同じテーブルに座らず、会話せず、視線を交わさず、同行者や恋人のように見せない。サトーはセラの存在に気づいていない、という関係性が一目で伝わる構図にする。サトーのおっさんらしい穏やかさと、背後で静かに立つ猫耳メイド護衛のセラの対比が重要である。背景は物語に沿った白鷺川の春の都市景観として後ろに広げ、人物より目立たせない。現代の映画的リアリズムでまとめる。画像の中には作品タイトル、サブタイトル、ロゴ、章話節ラベル、UI文字、クレジットなどの後乗せ文字を入れず、作品のキービジュアルとして成立させる。背景の一部として自然に存在する店名看板や街中表示は許容する。",
+    "negativePrompt": "avoid generic fantasy poster layout, obvious combat pose, visible knife, visible sword, visible bladed weapon, extra machinery on Sera, party-like crowd, embedded cover title, embedded subtitle, poster logo, floating typography, chapter label overlay, UI overlay, floating credits, tiny Sera, distant Sera, Sera at frame edge, Sera in casual clothes, altered Sera costume, dark modern suit on Sera, one-character composition, background-dominant composition, small figures, duplicate Sato, duplicate Sera, same person twice, multiple moments in one frame, montage composition, Sato and Sera at the same table, seated together, conversation between them, eye contact between them, romantic date mood, companion pose, bag on Sera, handbag, tote bag, shopping bag, backpack on Sera"
+  }
+}

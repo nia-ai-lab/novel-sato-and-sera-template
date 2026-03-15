@@ -128,11 +128,14 @@ async function main() {
   const promptFile = JSON.parse(promptSource);
   const { spec, titleImage } = promptFile;
   const outputDir = path.join(rootDir, titleImage.outputDir);
+  const noTextInstruction =
+    "Do not add the novel title, subtitle, chapter labels, logo, UI overlay, or floating credits onto the image. Keep it as a clean key visual. Natural in-world shop signs or street signage may exist if they belong to the background, but they must not be used to display the novel title or subtitle.";
   const prompt = [
     spec.globalPrompt,
     titleImage.prompt,
-    `Final delivery will be cropped to ${spec.fixedWidth}x${spec.fixedHeight}. Keep the important subject matter centered with safe margins.`,
-    `Negative prompt: ${spec.globalNegativePrompt}, ${titleImage.negativePrompt}`,
+    noTextInstruction,
+    `Final delivery will be cropped to ${spec.fixedWidth}x${spec.fixedHeight}. Keep the important subject matter centered with safe margins and strong widescreen balance.`,
+    `Negative prompt: ${spec.globalNegativePrompt}, ${titleImage.negativePrompt}, embedded cover title, embedded subtitle, poster logo, floating typography, chapter label overlay, UI overlay, floating credits`,
   ].join(" ");
 
   const referenceImagePaths = (titleImage.referenceImages || []).map((entry) =>
@@ -158,7 +161,7 @@ async function main() {
     generationConfig: {
       responseModalities: ["TEXT", "IMAGE"],
       imageConfig: {
-        aspectRatio: "9:16",
+        aspectRatio: "16:9",
         imageSize: "2K",
       },
     },

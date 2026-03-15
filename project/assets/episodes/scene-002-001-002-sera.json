@@ -1,0 +1,20 @@
+{
+  "episodeId": "scene-002-001-002-sera",
+  "title": "第2節　保冷箱の底",
+  "chapterTitle": "第2章　白い川風",
+  "model": "gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-03-15T03:16:11.084Z",
+  "output": "project/assets/episodes/scene-002-001-002-sera.webp",
+  "rawOutput": "project/assets/episodes/scene-002-001-002-sera.raw.png",
+  "referenceImages": [
+    "project/assets/characters/sato-episode.png",
+    "project/assets/characters/sera.png"
+  ],
+  "referenceCharacterIds": [
+    "sato-episode",
+    "sera"
+  ],
+  "continuityNotes": [],
+  "prompt": "Create one cinematic 16:9 scene illustration for a serial web novel. Do not render any readable text, chapter numbers, talk labels, section labels, captions, subtitles, logos, or UI overlays inside the image. Story context: 第2章　白い川風 / 第1話　日向のテラス席. Shared talk background: 第2章第1話の昼テラス背景. Background reference prompt: Cinematic noon environment at White Heron Riverfront Commons. Show a tasteful riverside terrace with white tabletops, glass and wood architecture, broad daylight, shimmering reflected light from water, and an airy but not crowded Sunday lunch mood. The place should feel modern, polished, and pleasantly open. Preserve the same place, architecture, time of day, weather, lighting, and atmosphere unless the scene text explicitly changes them. Use the same talk-level setting as the shared stage, but show it from a hidden security-side, reverse angle, blind spot, rear approach, service path, or protected backside when appropriate. Scene focus: 第2節　保冷箱の底 / セラパート. Summary: 保冷ボックスは冷やしすぎていた。 食材管理なら必要のない温度帯で、しかも蓋の内側に簡易噴霧の細工がある。人の密度と風向きを使ってテラス席だけを薄く眠らせるつもりだと分かれば、や… Key beats: 保冷ボックスは冷やしすぎていた。 食材管理なら必要のない温度帯で、しかも蓋の内側に簡易噴霧の細工がある。人の密度と風向きを使ってテラス席だけを薄く眠らせるつもりだと分かれば、やることは早い。セラは清掃スタッフの死角に立ちながら、厨房口と川側通路の両方を視界に入れた。 班は三人だった。ひとりは配膳を装い、ひとりは保冷ボックスの交換係、最後のひとりが搬出役として裏通路に車両を待たせている。明るい場所でやるには、それなりに整った計画だったが、明るい場所ほど影は薄く広がる。セラにとっては、隠れる場所が多いのと同じだった。 彼女はボックスのラッチに触れ、噴霧ユニットの圧を先に抜いた。次いで交換係の手首を返し、蓋の裏に貼られたカートリッジだけを抜き取る。男が異変を理解する前に、清掃カートの陰で膝を折らせた。皿の触れ合う音より小さければ、それで十分だ。 Use the supplied character reference images to preserve these canonical looks: sato-episode: サトー. Keep him consistent with the episode-specific portrait generated from the canonical Sato image. sera: セラ. Keep her consistent with the canonical Sera portrait, including the visible cat-ear support-security unit, without adding installment-specific redesign. The support unit is completed by the cat-ear headband alone, so do not add backpack rigs, back-mounted devices, extra mechanical arms, exoskeleton parts, visible cable bundles, or any other extra machinery. Compose for a 1920x1080 delivery, keep main subjects near the center, and preserve enough left/right safe margin so the image still reads well in portrait scrolling mode. Use the installment-specific Sato portrait for Sato. Use Sera's canonical portrait directly without redesigning her for this installment. For Sato-side images, Sato is dominant and any Sera presence must stay clearly separate and unreadable as a casual companion. For Sera-side images, Sera is dominant, the attacker must not resemble Sato, and Sato must remain an unaware background figure looking elsewhere. Preserve the feeling of a refined but ordinary Sunday, and compose for a 1920x1080 delivery with the main subjects near the center and safe margins on both sides so the image also works in portrait scrolling layouts.",
+  "responseTexts": []
+}
